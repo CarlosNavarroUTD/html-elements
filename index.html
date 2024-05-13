@@ -1,5 +1,31 @@
 <div class="html-item">
     <img src="https://www.gustavomirabal.es/wp-content/uploads/2019/05/Carrusel-1200x900.jpg" alt="Imagen 1">
     <h3>Título 1</h3>
-    <a href="/carrusel.html" class="button">Más Información</a>
+    <a href="carrusel.html" class="button">Más Información</a>
 </div>
+<style>
+    .html-item {
+            min-width: 25%; /* Mostrar 4 imágenes a la vez, cada una toma el 25% del ancho */
+            box-sizing: border-box;
+            padding: 0 7.5px; /* Espacio entre imágenes */
+            text-align: center;
+        }
+        .html-item h3 {
+            
+            font-size: 22px;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: white;
+            background-color: #950076;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #790a62;
+        }
+</style>
