@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Infinito</title>
+    <style>
+        .carousel {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 25%; /* Mostrar 4 imágenes a la vez, cada una toma el 25% del ancho */
+            box-sizing: border-box;
+            padding: 0 7.5px; /* Espacio entre imágenes */
+            text-align: center;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+        .container h3 {
+            
+            font-size: 22px;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: white;
+            background-color: #950076;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #790a62;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-qn7kjb4vv07jvmhelpralb476h3tq701ia7rkok7r8.png" alt="Imagen 1">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-1-qn7kjc2q1u8u78g1g85x5svnruz6xw3ruev91yitl0.png" alt="Imagen 2">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-2-qn7kjd0k8oa4iueoaqkjqan4d8uk5l7i6jiqj8hfes.png" alt="Imagen 3">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-3-qn7kjdyefibeugdb58z6asekympxdab8io680ig18k.png" alt="Imagen 4">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-4-qn7kjew8mccp62bxzrdsva61k0lakzeyustphsen2c.png" alt="Imagen 5">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-5-qn7kjfu2t6dzhoaku9sffrxi5egnsoip6xh6z2d8w4.png" alt="Imagen 6">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-6-qn7kjgrx00f9ta97os7209oyqsc10dmfj24ogcbupw.png" alt="Imagen 7">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-7-qn7kjgrx00f9ta97os7209oyqsc10dmfj24ogcbupw.png" alt="Imagen 8">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <!-- Duplicar las primeras 4 imágenes -->
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-qn7kjb4vv07jvmhelpralb476h3tq701ia7rkok7r8.png" alt="Imagen 1">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-1-qn7kjc2q1u8u78g1g85x5svnruz6xw3ruev91yitl0.png" alt="Imagen 2">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-2-qn7kjd0k8oa4iueoaqkjqan4d8uk5l7i6jiqj8hfes.png" alt="Imagen 3">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+            <div class="carousel-item">
+                <img src="https://centrodefisioterapiaintegraldurango.com/wp-content/uploads/elementor/thumbs/homemade-burgers-with-beef-PJJH7D2-3-qn7kjdyefibeugdb58z6asekympxdab8io680ig18k.png" alt="Imagen 4">
+                <h3>Título 1</h3>
+                <a href="#" class="button">Más Información</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+const totalItems = carouselItems.length;
+
+setInterval(() => {
+    currentIndex++;
+    if (currentIndex === totalItems - 4) { // Al llegar al final de las imágenes originales
+        const offset = -currentIndex * 25; // Desplazar 25% por cada imagen
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        setTimeout(() => {
+            carouselInner.style.transition = 'none'; // Deshabilitar la transición
+            carouselInner.style.transform = 'translateX(0)'; // Restablecer a la primera imagen
+            currentIndex = 0;
+            setTimeout(() => {
+                carouselInner.style.transition = 'transform 0.5s ease-in-out'; // Rehabilitar la transición
+            }, 50); // Breve pausa para que el cambio sea perceptible
+        }, 500); // Esperar a que la imagen final esté en su lugar antes de reiniciar
+    } else {
+        const offset = -currentIndex * 25; // Desplazar 25% por cada imagen
+        carouselInner.style.transform = `translateX(${offset}%)`;
+    }
+}, 3000);
+
+    </script>
+</body>
+</html>
